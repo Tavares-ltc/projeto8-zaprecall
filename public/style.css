@@ -1,8 +1,11 @@
-h1 {
+* h1 {
     font-family: Righteous;
 }
-h2 {
+* h2 {
     font-family:Recursive;
+}
+* {
+box-sizing: border-box;
 }
 .button:hover {
 cursor: pointer;
@@ -11,6 +14,7 @@ cursor: pointer;
     width: 375px;
     height: 667px;
     background-color: #FB6B6B;
+    position: relative;
 }
 
 .launchPage {
@@ -86,4 +90,32 @@ cursor: pointer;
     border-radius: 5px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
     padding: 15px;
+}
+.recallPage .askCard ion-icon {
+    width: 20px;
+    height: 23px;
+}
+.recallPage .askCard h2 {
+    font-weight: 700;
+    size: 16px;
+    height: 19px;
+    color: #333333;
+}
+
+.recallPage .footer {
+    width: 375px;
+    height: 70px;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recallPage .footer h2 {
+font-weight: 400;
+size:18px;
+color: #333333;
+
 }

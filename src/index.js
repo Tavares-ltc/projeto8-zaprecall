@@ -6,8 +6,7 @@ function App() {
     return (
         <div className='background'>
             
-    {/* <LaunchPage/> */}
-    <Recall/>
+    <LaunchPage/>
         </div>
     )
 }
