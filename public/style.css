@@ -1,0 +1,89 @@
+h1 {
+    font-family: Righteous;
+}
+h2 {
+    font-family:Recursive;
+}
+.button:hover {
+cursor: pointer;
+}
+.background {
+    width: 375px;
+    height: 667px;
+    background-color: #FB6B6B;
+}
+
+.launchPage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.launchPage img {
+    width: 136px;
+    height: 161px;
+    margin-bottom: 20px;
+}
+
+.launchPage h1 {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.launchPage .button {
+    background-color: #FFFFFF;
+    width: 246px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #D70900;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+
+}
+
+.launchPage .button h2 {
+    color: #D70900;
+    size: 18px;
+    font-weight: 400;
+}
+.recallPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.recallPage .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 42px;
+    margin-bottom: 60px;
+}
+
+.recallPage .logo img {
+    width: 52px;
+    height: 60px;
+}
+.recallPage .logo h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.recallPage .askCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 65px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
