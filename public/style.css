@@ -7,7 +7,7 @@
 * {
 box-sizing: border-box;
 }
-.button:hover {
+.button:hover, .askCard ion-icon:hover {
 cursor: pointer;
 }
 .background {
@@ -90,6 +90,7 @@ cursor: pointer;
     border-radius: 5px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
     padding: 15px;
+    margin-bottom: 25px;
 }
 .recallPage .askCard ion-icon {
     width: 20px;
@@ -100,6 +101,11 @@ cursor: pointer;
     size: 16px;
     height: 19px;
     color: #333333;
+}
+.recallPage .askCard.clicked {
+    width: 299px;
+    height: 131px;
+    
 }
 
 .recallPage .footer {
