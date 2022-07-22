@@ -1,15 +1,22 @@
-* h1 {
+ h1 {
     font-family: Righteous;
 }
-* h2 {
-    font-family:Recursive;
+
+ h2 {
+    font-family: Recursive;
 }
+
 * {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
-.button:hover, .askCard ion-icon:hover {
-cursor: pointer;
+
+.button:hover,
+.askCard ion-icon:hover,
+.askCard img:hover,
+.recallPage .askCard .buttons-container div:hover {
+    cursor: pointer;
 }
+
 .background {
     width: 375px;
     height: 667px;
@@ -57,11 +64,13 @@ cursor: pointer;
     size: 18px;
     font-weight: 400;
 }
+
 .recallPage {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .recallPage .logo {
     display: flex;
     align-items: center;
@@ -74,6 +83,7 @@ cursor: pointer;
     width: 52px;
     height: 60px;
 }
+
 .recallPage .logo h1 {
     font-size: 36px;
     font-weight: 400;
@@ -92,20 +102,36 @@ cursor: pointer;
     padding: 15px;
     margin-bottom: 25px;
 }
+
 .recallPage .askCard ion-icon {
     width: 20px;
     height: 23px;
 }
+
 .recallPage .askCard h2 {
     font-weight: 700;
     size: 16px;
-    height: 19px;
     color: #333333;
 }
+
 .recallPage .askCard.clicked {
+    flex-direction: column;
     width: 299px;
     height: 131px;
-    
+    position: relative;
+}
+.recallPage .askCard.clicked h2 {
+font-weight: 400;
+font-size: 18;
+}
+
+.recallPage .askCard.clicked img {
+    position: absolute;
+    box-sizing: content-box;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    right: 0;
+    bottom: 0;
 }
 
 .recallPage .footer {
@@ -119,9 +145,45 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
 }
-.recallPage .footer h2 {
-font-weight: 400;
-size:18px;
-color: #333333;
 
+.recallPage .footer h2 {
+    font-weight: 400;
+    font-family:Recursive;
+    size: 18px;
+    color: #333333;
+
+}
+
+.recallPage .buttons-container {
+    display: flex;
+}
+
+.recallPage .buttons-container div {
+    display: flex;
+    width: 75px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #FB6B6B;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.recallPage .buttons-container div h2 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.recallPage .buttons-container div:nth-of-type(1) {
+    background-color: #FF3030;
+}
+
+.recallPage .buttons-container div:nth-of-type(2) {
+    background-color: #FF922E;
+}
+
+.recallPage .buttons-container div:nth-of-type(3) {
+    background-color: #2FBE34;
 }
