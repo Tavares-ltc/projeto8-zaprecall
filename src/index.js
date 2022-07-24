@@ -1,14 +1,15 @@
 import ReactDOM from 'react-dom'
+import './reset.css'
+import './style.css'
 import LaunchPage from './launch'
-import Recall from './recall'
 
 function App() {
     return (
         <div className='background'>
-            
-    <LaunchPage/>
+
+            <LaunchPage />
         </div>
     )
 }
 
-ReactDOM.render(<App/>, document.querySelector('.root'))
+ReactDOM.render(<App />, document.querySelector('.root'))

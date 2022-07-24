@@ -5,6 +5,12 @@
  h2 {
     font-family: Recursive;
 }
+p {
+    font-family: Recursive;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+}
 
 * {
     box-sizing: border-box;
@@ -142,6 +148,7 @@ font-size: 18;
     bottom: 0;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -187,3 +194,39 @@ font-size: 18;
 .recallPage .buttons-container div:nth-of-type(3) {
     background-color: #2FBE34;
 }
+ion-icon[name="close-circle"] {
+    color:#FF3030;
+    width: 23px;
+    height: 23px;
+}
+ion-icon[name="help-circle"] {
+    color:#FF922E;
+    width: 23px;
+    height: 23px;
+}
+ion-icon[name="checkmark-circle"] {
+    color:#2FBE34;
+    width: 23px;
+    height: 23px;
+}
+
+.results-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer.fineshed {
+    height: 165px;
+    justify-content: space-between;
+    padding: 10px;
+    transition: all;
+    transition-duration:1s;
+}
+.footer.fineshed h2:first {
+font-size: 18px;
+font-weight: 700;
+}
+.footer.fineshed p {
+    font-family: Recursive;
+
+    }
