@@ -1,10 +1,18 @@
- h1 {
+html,
+body,
+.root {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
     font-family: Righteous;
 }
 
- h2 {
+h2 {
     font-family: Recursive;
 }
+
 p {
     font-family: Recursive;
     font-size: 18px;
@@ -12,20 +20,21 @@ p {
     font-weight: 400;
 }
 
-* {
+div {
     box-sizing: border-box;
 }
 
 .button:hover,
 .askCard ion-icon:hover,
 .askCard img:hover,
-.recallPage .askCard .buttons-container div:hover {
+.recallPage .askCard .buttons-container div:hover,
+.restart-button:hover {
     cursor: pointer;
 }
 
 .background {
-    width: 375px;
-    height: 667px;
+    width: 100%;
+    height: 100%;
     background-color: #FB6B6B;
     position: relative;
 }
@@ -126,9 +135,10 @@ p {
     height: 131px;
     position: relative;
 }
+
 .recallPage .askCard.clicked h2 {
-font-weight: 400;
-font-size: 18;
+    font-weight: 400;
+    font-size: 18;
 }
 
 .recallPage .askCard.clicked img {
@@ -155,7 +165,7 @@ font-size: 18;
 
 .recallPage .footer h2 {
     font-weight: 400;
-    font-family:Recursive;
+    font-family: Recursive;
     size: 18px;
     color: #333333;
 
@@ -176,6 +186,7 @@ font-size: 18;
     align-items: center;
     text-align: center;
 }
+
 .recallPage .buttons-container div h2 {
     font-size: 12px;
     font-weight: 400;
@@ -194,18 +205,36 @@ font-size: 18;
 .recallPage .buttons-container div:nth-of-type(3) {
     background-color: #2FBE34;
 }
+
+.recallPage h2.red {
+    color: #FF3030;
+    text-decoration: line-through;
+}
+
+.recallPage h2.green {
+    color: #2FBE34;
+    text-decoration: line-through;
+}
+
+.recallPage h2.yellow {
+    color: #FF922E;
+    text-decoration: line-through;
+}
+
 ion-icon[name="close-circle"] {
-    color:#FF3030;
+    color: #FF3030;
     width: 23px;
     height: 23px;
 }
+
 ion-icon[name="help-circle"] {
-    color:#FF922E;
+    color: #FF922E;
     width: 23px;
     height: 23px;
 }
+
 ion-icon[name="checkmark-circle"] {
-    color:#2FBE34;
+    color: #2FBE34;
     width: 23px;
     height: 23px;
 }
@@ -220,13 +249,94 @@ ion-icon[name="checkmark-circle"] {
     justify-content: space-between;
     padding: 10px;
     transition: all;
-    transition-duration:1s;
+    transition-duration: 1s;
 }
-.footer.fineshed h2:first {
-font-size: 18px;
-font-weight: 700;
-}
-.footer.fineshed p {
-    font-family: Recursive;
 
+.footer.fineshed h2:first {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.restart-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FB6B6B;
+    border-radius: 5px;
+    width: 169px;
+    height: 32px;
+}
+
+.footer.fineshed .restart-button h2 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 600px) {
+
+    html,
+    body,
+    .root {
+        width: 100%;
+        height: 100%;
     }
+
+    .background,
+    .launchPage,
+    .recallPage {
+        width: 100%;
+        height: 100%;
+    }
+
+    .recallPage .logo h1 {
+        font-size: 64px;
+    }
+
+    .recallPage .logo img {
+        width: 86px;
+        height: 100px;
+    }
+
+    .recallPage .askCard {
+        width: 567px;
+        height: 100px;
+    }
+
+    .recallPage .askCard.clicked {
+        width: 567px;
+        height: 100px;
+    }
+
+    .recallPage .footer {
+        width: 100%;
+        height: 118px;
+    }
+
+    .recallPage .askCard h2 {
+        font-size: 24px;
+    }
+    .recallPage .askCard.clicked h2 {
+        font-size: 19px;
+    }
+    .recallPage .askCard.askCard.clicked .buttons-container h2 {
+        font-size: 16px;
+    }
+
+    .recallPage .askCard ion-icon {
+        height: 32px;
+        width: 32px;
+    }
+
+    .footer ion-icon {
+        height: 32px;
+        width: 32px;
+    }
+
+    .footer h2 {
+        font-size: 32px;
+    }
+    .footer.fineshed {
+        height: 240px;
+    }
+}

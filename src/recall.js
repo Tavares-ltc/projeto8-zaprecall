@@ -30,10 +30,9 @@ function sort() {
 }
 sort();
 
-function Recall() {
+function Recall({setTela}) {
     const [footerResult, setFooterResult] = React.useState(0)
     const [resultList, setResultList] = React.useState([])
-
 
     return (
         <div className="recallPage">
@@ -42,7 +41,7 @@ function Recall() {
                 <h1>ZapRecall</h1>
             </div>
             {questions.map((data, index) => (<AskCards question={data.question} answer={data.answer} index={index} setResultList={setResultList} resultList={resultList} setFooterResult={setFooterResult} footerResult={footerResult} />))}
-            <Footer resultList={resultList} footerResult={footerResult} ></Footer>
+            <Footer resultList={resultList} footerResult={footerResult} setTela={setTela}></Footer>
         </div>
     )
 }

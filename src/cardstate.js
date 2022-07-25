@@ -2,14 +2,10 @@ import React from 'react'
 
 let alreadyChosedOneCard = false
 
-function AskCards({ question, answer, index, setResultList, resultList, setFooterResult, footerResult }) {
+function AskCards({ question, answer, index, setResultList, setFooterResult, footerResult }) {
     const [cardState, setCardState] = React.useState("")
 
-    function isFinished(){
-        if (resultList.length === 3){
-            
-        }
-    }
+
 
     function pushResultList(icon) {
         alreadyChosedOneCard = false
@@ -59,7 +55,7 @@ function AskCards({ question, answer, index, setResultList, resultList, setFoote
     if (cardState === "close-circle") {
         return (
             <div key={index} className="askCard">
-                <h2>Pergunta {index + 1}</h2>
+                <h2 className='red'>Pergunta {index + 1}</h2>
                 <ion-icon name="close-circle"></ion-icon>
             </div>
         )
@@ -67,7 +63,7 @@ function AskCards({ question, answer, index, setResultList, resultList, setFoote
     if (cardState === "help-circle") {
         return (
             <div key={index} className="askCard">
-                <h2>Pergunta {index + 1}</h2>
+                <h2 className='yellow'>Pergunta {index + 1}</h2>
                 <ion-icon name="help-circle"></ion-icon>
             </div>
         )
@@ -75,7 +71,7 @@ function AskCards({ question, answer, index, setResultList, resultList, setFoote
     if ( cardState === "checkmark-circle"){
         return (
             <div key={index} className="askCard">
-                <h2>Pergunta {index + 1}</h2>
+                <h2 className='green'>Pergunta {index + 1}</h2>
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
         )

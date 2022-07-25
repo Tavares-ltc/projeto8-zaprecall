@@ -1,17 +1,9 @@
 import React from "react";
 import Recall from "./recall";
-
-function Logo() {
-    return (
-        <div className="logo">
-            <img src="img/logo.png"></img>
-            <h1>ZapRecall</h1>
-        </div>
-    )
-}
+import Logo from "./logo";
 
 function LaunchPage() {
-    const [tela, setTela] = React.useState(false)
+    const [tela, setTela] = React.useState(true)
 
     return (
         <>
@@ -22,7 +14,7 @@ function LaunchPage() {
                         <h2>Iniciar Recall!</h2>
                     </div>
                 </div>
-            ) : (<Recall />)}
+            ) : (<Recall setTela={setTela} />)}
         </>
     )
 }
